@@ -1,0 +1,13 @@
+server:
+  port:8080
+spring:
+  application:
+    name: infytel-calldetails
+  cloud:
+    consul:
+      config:
+        enabled: true
+        prefix: config
+        defaultContext: application
+        profileSeparator: '::'
+        format: YAML
